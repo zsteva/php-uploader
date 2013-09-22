@@ -22,12 +22,14 @@ This modules is common for apache, and exist prebuilded on debian.
 
 2. In .htaccess config for upload.php script:
 
+~~~
 	<Files upload.php>
 	php_value max_execution_time 0
 	php_value auto_prepend_file php-uploader.inc.php
 	SetEnvIf content-type (multipart/form-data)(.*) NEW_CONTENT_TYPE=multipart/form-data-alternate$2 OLD_CONTENT_TYPE=$1$2
 	RequestHeader set content-type %{NEW_CONTENT_TYPE}e env=NEW_CONTENT_TYPE
 	</Files>
+~~~
 
 And we are ready for testing :)
 
