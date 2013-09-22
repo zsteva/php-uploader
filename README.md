@@ -33,7 +33,7 @@ And we are ready for testing :)
 
 ## Test site
 
-	http://zsteva.info/upload/
+	[http://zsteva.info/upload/](http://zsteva.info/upload/)
 
 ## Security
 
