@@ -20,7 +20,7 @@
 
 
 class phpuploader {
-	private $uploader_debug = true;
+	private $uploader_debug = false;
 	private $debug_dir = '/tmp/upload';
 	private $tmp_dir = '/tmp';
 
